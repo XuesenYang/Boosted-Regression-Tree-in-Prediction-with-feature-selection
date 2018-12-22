@@ -6,7 +6,7 @@ function brtModel = brtTrain( X, T, leafNum, treeNum, nu )
     % LeafNum is the number of leaf nodes of regression tree
     % treeNum is the Number of binary regression trees will add to the model
     % Nu is a shrinkage parameter
-    %if you can not Call c++ Script:findBestSplit.cpp, run command in Command window:mex findBestSplit.cpp COMPFLAGS="/openmp $COMPFLAGS"
+    % if you can not Call c++ Script:findBestSplit.cpp, run command in Command window:mex findBestSplit.cpp COMPFLAGS="/openmp $COMPFLAGS"
     brtModel = cell(treeNum+1,1);
     
     brtModel{1} = mean(T);

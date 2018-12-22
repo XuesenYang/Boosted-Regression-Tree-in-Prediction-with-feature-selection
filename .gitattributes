@@ -1,0 +1,5 @@
+*.c++ linguist-language=matlab
+
+*.cpp linguist-language=matlab
+
+*.html linguist-language=matlab
